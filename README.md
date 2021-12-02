@@ -10,7 +10,7 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 
  \* equal contribution
 
-<div align=center><img src="ressources/09260052.gif"/></div>  
+<div align=center><img src="resources/09260052_new.gif"/></div>  
 
 ## 🤓 TL;DR
 - Current SOTA in self-supervised monocular depth estimation achievies highly **accurate** depth predictions, but suffer from **inconsistencies** across temporal frames
