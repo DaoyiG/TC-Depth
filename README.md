@@ -8,14 +8,14 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - 3DV, 
 #### Spatial-Temporal Attention through Self-Supervised Geometric Guidance  
 Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving, 2021. 
 
- .* equal contribution
+ \* equal contribution
 
-<div align=center><img src="ressources/compared_09260052.gif"/></div>  
+<div align=center><img src="ressources/09260052.gif"/></div>  
 
 ## 🤓 TL;DR
 - Current SOTA in self-supervised monocular depth estimation achievies highly **accurate** depth predictions, but suffer from **inconsistencies** across temporal frames
 - Our novel **Spatial-Temporal Attention** mechanism with **Geometric Guidance** improves **consistency** while maintaining accuracy
-- The Temporal Consistency Metric (TCM) is a quantitative measure to evaluate the consistency between temporal predictions in 3D
+- The **Temporal Consistency Metric (TCM)** is a quantitative measure to evaluate the consistency between temporal predictions in 3D
 
 
 ## News
