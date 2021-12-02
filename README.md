@@ -28,13 +28,13 @@ Please consider to cite our paper:
 
 ```bibtex
 @inproceedings{ruhkamp2021attention,
-    title = {{Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation}},
+    title = {Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation},
     author = {Patrick Ruhkamp and
               Daoyi Geo and
               Hanzhi Chen and
               Nassir Navab and
               Benjamin Busam},
-    booktitle = {{IEEE International Conference on 3D Vision (3DV)}},
+    booktitle = {IEEE International Conference on 3D Vision (3DV)},
     year = {2021},
     month = {December}
 }
