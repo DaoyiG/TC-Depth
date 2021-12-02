@@ -43,19 +43,19 @@ Please consider to cite our paper:
 
 ## Qualitative Results
 <p align="center">
-  <img src="ressources/teaser.png" alt="teaser figure" width="200" /> <img src="ressources/reconstruction.png" alt="reconstruction figure" width="600" />
+  <img src="resources/teaser.png" alt="teaser figure" width="200" /> <img src="resources/reconstruction.png" alt="reconstruction figure" width="600" />
 </p>
 
 
 ## Spatial-Temporal Attention
 <p align="center">
-  <img src="ressources/attention.png" alt="teaser figure" width="800" />
+  <img src="resources/attention.png" alt="teaser figure" width="800" />
 </p>
 
 
 ## Temporal Consistency Metric (TCM)
 <p align="center">
-  <img src="ressources/tcm.png" alt="tcm visualisation" width="400" />
+  <img src="resources/tcm.png" alt="tcm visualisation" width="400" />
 </p>
 
 
