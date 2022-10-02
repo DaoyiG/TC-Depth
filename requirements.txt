@@ -1,0 +1,5 @@
+torch==1.7.1+cu110
+torchvision==0.8.2+cu110
+--find-links https://download.pytorch.org/whl/torch_stable.html
+Pillow~=7.1.2
+matplotlib~=3.2.1

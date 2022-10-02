@@ -18,13 +18,57 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 - The **Temporal Consistency Metric (TCM)** is a quantitative measure to evaluate the consistency between temporal predictions in 3D
 
 
-## News
+## 🎇 News
+- [x] Release pre-trained model (02.10.2022)
+- [x] Release training code (02.10.2022)
 - [x] Evaluation code for TCM available (02.12.2021)
-- [ ] Release training code (tbd)
 
-## ✏️ 📄 Citation
+## 🖊 Results
+### Qualitative Results
+<p align="center">
+  <img src="resources/teaser.png" alt="teaser figure" width="200" /> <img src="resources/reconstruction.png" alt="reconstruction figure" width="600" />
+</p>
 
-Please consider to cite our paper:
+
+### Spatial-Temporal Attention
+<p align="center">
+  <img src="resources/attention.png" alt="teaser figure" width="800" />
+</p>
+
+
+### Temporal Consistency Metric (TCM)
+<p align="center">
+  <img src="resources/tcm.png" alt="tcm visualisation" width="400" />
+</p>
+
+
+## 💽 Resource
+
+### GT for TCM
+[3 Frames Track](https://drive.google.com/file/d/10ZzZBiY6B6wUzxwtEjwYepstFw7eAnsG/view?usp=sharing) | [5 Frames Track](https://drive.google.com/file/d/1v77HinwmssEH0HQJMjd65jCrgiZc-RaB/view?usp=sharing) | [7 Frames Track](https://drive.google.com/file/d/1XpvPfqR-vZqJmuiemJqklYy-B1yzSBb5/view?usp=sharing)  
+
+### Pretrained Weights
+[Model trained with DRNC-26 encoder](https://drive.google.com/file/d/189C9xUhwwwVgPT7qU_v5hPSw9FzivYhF/view?usp=sharing) | [Model trained with DRND-54 encoder](https://drive.google.com/file/d/1dcCtYgoPQncjb6E5JkRwYp_PGOImDwS_/view?usp=sharing)  
+
+
+
+[//]: # (Training Procedure &#40;set default settings in ```options.py```&#41;:  )
+
+[//]: # (```)
+
+[//]: # (python train.py)
+
+[//]: # (```)
+
+[//]: # (### Pretrained Weights)
+
+[//]: # ([KITTI DRNC-26]&#40;https://drive.google.com/file/d/189C9xUhwwwVgPT7qU_v5hPSw9FzivYhF/view?usp=sharing&#41;)
+
+[//]: # ([KITTI DRND-54]&#40;https://drive.google.com/file/d/1dcCtYgoPQncjb6E5JkRwYp_PGOImDwS_/view?usp=sharing&#41;)
+
+## 📄 Citation
+
+If you find our work useful, please consider citing the following papers:
 
 ```bibtex
 @inproceedings{ruhkamp2021attention,
@@ -38,49 +82,18 @@ Please consider to cite our paper:
     year = {2021},
     month = {December}
 }
+
+@article{monodepth2,
+  title     = {Digging into Self-Supervised Monocular Depth Prediction},
+  author    = {Cl{\'{e}}ment Godard and
+               Oisin {Mac Aodha} and
+               Michael Firman and
+               Gabriel J. Brostow},
+  booktitle = {The International Conference on Computer Vision (ICCV)},
+  month = {October},
+year = {2019}
+}
 ```
-
-
-## Qualitative Results
-<p align="center">
-  <img src="resources/teaser.png" alt="teaser figure" width="200" /> <img src="resources/reconstruction.png" alt="reconstruction figure" width="600" />
-</p>
-
-
-## Spatial-Temporal Attention
-<p align="center">
-  <img src="resources/attention.png" alt="teaser figure" width="800" />
-</p>
-
-
-## Temporal Consistency Metric (TCM)
-<p align="center">
-  <img src="resources/tcm.png" alt="tcm visualisation" width="400" />
-</p>
-
-
-
-### GT for TCM
-[3 Frames](https://drive.google.com/file/d/10ZzZBiY6B6wUzxwtEjwYepstFw7eAnsG/view?usp=sharing) | [5 Frames](https://drive.google.com/file/d/1v77HinwmssEH0HQJMjd65jCrgiZc-RaB/view?usp=sharing) | [7 Frames](https://drive.google.com/file/d/1XpvPfqR-vZqJmuiemJqklYy-B1yzSBb5/view?usp=sharing)  
-
-
-
-
-
-[//]: # (Training Procedure &#40;set default settings in ```options.py```&#41;:  )
-
-[//]: # (```)
-
-[//]: # (python train.py)
-
-[//]: # (```)
-
-
-
-
-[//]: # (### Pretrained Weights)
-
-[//]: # ([KITTI DRNC-26]&#40;https://drive.google.com/file/d/189C9xUhwwwVgPT7qU_v5hPSw9FzivYhF/view?usp=sharing&#41;)
-
-[//]: # ([KITTI DRND-54]&#40;https://drive.google.com/file/d/1dcCtYgoPQncjb6E5JkRwYp_PGOImDwS_/view?usp=sharing&#41;)
+## ❤ Acknowledgement
+Our implementation is based on [MonoDepth2](https://github.com/nianticlabs/monodepth2) and follows their code structure. Thanks for their great contribution :) 
 
