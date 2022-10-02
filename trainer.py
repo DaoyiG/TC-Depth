@@ -44,14 +44,15 @@ class Trainer:
         # Use Monodepth2 as motion masking provider
         self.ref_net["mono_encoder"] = networks.ResnetEncoder_BaseLine(18, False)
         self.ref_net["mono_encoder"].to(self.device)
-        self.parameters_to_train += list(self.ref_net["mono_encoder"].parameters())
+        # self.parameters_to_train += list(self.ref_net["mono_encoder"].parameters())
 
         self.ref_net["mono_depth"] = networks.DepthDecoder_BaseLine(self.ref_net["mono_encoder"].num_ch_enc)
         self.ref_net["mono_depth"].to(self.device)
-        self.parameters_to_train += list(self.ref_net["mono_depth"].parameters())
-        if self.monodepth_path is not None:
-            self.load_ref_net_weight()
-            print("Succesfully load first pretrained monodepth2 weights for motion masking!")
+        # self.parameters_to_train += list(self.ref_net["mono_depth"].parameters())
+
+        self.monodepth_path = self.opt.reference_weights_folder
+        assert self.monodepth_path is not None, f"the reference network should directly load weights"
+        # self.load_ref_net_weight(load_epoch=0)
 
         self.models["encoder"] = networks.DRNEncoder(pretrained=True)
         self.models["encoder"].to(self.device)
@@ -138,6 +139,8 @@ class Trainer:
             val_dataset, self.opt.batch_size, True,
             num_workers=self.opt.num_workers, pin_memory=True, drop_last=True)
         self.val_iter = iter(self.val_loader)
+
+        self.log_path = os.path.join(self.opt.log_dir, self.opt.model_name)
 
         self.writers = {}
         for mode in ["train", "val"]:
@@ -859,15 +862,16 @@ class Trainer:
             print("Cannot find Adam weights so Adam is randomly initialized")
 
     def load_ref_net_weight(self):
-        self.monodepth_path = os.path.expanduser(self.monodepth_path)
-
         if self.epoch <= 19:
             self.monodepth_path = os.path.join(self.monodepth_path, "weights_{}".format(self.epoch))
         else:
             self.monodepth_path = os.path.join(self.monodepth_path, "weights_19")
 
+        self.monodepth_path = os.path.expanduser(self.monodepth_path)
+
         assert os.path.isdir(self.monodepth_path), \
             "Cannot find folder {}".format(self.opt.reference_weights_folder)
+
         print("loading weights from folder {} for reference monodepth2 for epoch {}".format(self.monodepth_path, self.epoch))
 
         for n in ["encoder", "depth"]:

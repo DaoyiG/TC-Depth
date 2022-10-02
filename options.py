@@ -146,6 +146,11 @@ class MonodepthOptions:
                                  default=0.25)
 
         # ABLATION options
+        self.parser.add_argument("--use_uncert",
+                                 type=bool,
+                                 help="use uncertainty",
+                                 default=False)
+
         self.parser.add_argument("--motion_masking_begin",
                                  type=int,
                                  help="when to use motion masking",
@@ -218,7 +223,8 @@ class MonodepthOptions:
 
         self.parser.add_argument("--reference_weights_folder",
                                  type=str,
-                                 help="name of model for reference net to load"
+                                 help="name of model for reference net to load",
+                                 required=True
                                  )
 
         self.parser.add_argument("--models_to_load",
@@ -226,7 +232,6 @@ class MonodepthOptions:
                                  type=str,
                                  help="models to load",
                                  default=["encoder", "depth", "pose_encoder", "pose", "cross_attention","ref_depth"])
-                                 # default=["encoder", "depth"])
 
         # LOGGING options
         self.parser.add_argument("--log_frequency",
