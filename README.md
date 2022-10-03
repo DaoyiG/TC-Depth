@@ -19,7 +19,6 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 
 
 ## 🎇 News
-- [x] Release pre-trained model (02.10.2022)
 - [x] Release training code (02.10.2022)
 - [x] Evaluation code for TCM available (02.12.2021)
 
@@ -47,8 +46,6 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 ### GT for TCM
 [3 Frames Track](https://drive.google.com/file/d/10ZzZBiY6B6wUzxwtEjwYepstFw7eAnsG/view?usp=sharing) | [5 Frames Track](https://drive.google.com/file/d/1v77HinwmssEH0HQJMjd65jCrgiZc-RaB/view?usp=sharing) | [7 Frames Track](https://drive.google.com/file/d/1XpvPfqR-vZqJmuiemJqklYy-B1yzSBb5/view?usp=sharing)  
 
-### Pretrained Weights
-[Model trained with DRNC-26 encoder](https://drive.google.com/file/d/189C9xUhwwwVgPT7qU_v5hPSw9FzivYhF/view?usp=sharing) | [Model trained with DRND-54 encoder](https://drive.google.com/file/d/1dcCtYgoPQncjb6E5JkRwYp_PGOImDwS_/view?usp=sharing)  
 
 
 
