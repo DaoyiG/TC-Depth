@@ -134,8 +134,7 @@ def predict(opt):
                 pred_depth_snippet[frame_id] = pred_depth.cpu().numpy()
             pred_depth_snippets.append(pred_depth_snippet)
 
-    print(len(pred_depth_snippets))
-    output_path = os.path.join("pred_depth_snippets_212_debug.npz")
+    output_path = os.path.join(opt.eval_out_dir, "pred_depth_snippets.npz")
     print("Saving to {} ...".format(output_path))
     np.savez_compressed(output_path, depth=np.array(pred_depth_snippets))
 

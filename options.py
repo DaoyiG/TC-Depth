@@ -288,7 +288,8 @@ class MonodepthOptions:
 
         self.parser.add_argument("--eval_out_dir",
                                  help="if set will output the disparities to this folder",
-                                 type=str)
+                                 type=str,
+                                 default='..')
 
         self.parser.add_argument("--post_process",
                                  help="if set will perform the flipping post processing "
