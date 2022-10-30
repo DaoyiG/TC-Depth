@@ -224,7 +224,7 @@ class MonodepthOptions:
         self.parser.add_argument("--reference_weights_folder",
                                  type=str,
                                  help="name of model for reference net to load",
-                                 required=True
+                                 
                                  )
 
         self.parser.add_argument("--models_to_load",
@@ -270,7 +270,7 @@ class MonodepthOptions:
                                  type=str,
                                  default="eigen",
                                  choices=[
-                                     "eigen", "eigen_benchmark", "benchmark", "odom_9", "odom_10"],
+                                     "eigen", "eigen_benchmark", "benchmark", "odom_9", "odom_10", "tcm"],
                                  help="which split to run eval on")
 
         self.parser.add_argument("--save_pred_disps",

@@ -223,8 +223,7 @@ def parse_args():
                         default='tcm')
 
     parser.add_argument('--data_path_test', type=str,
-                        help='dataset path',
-                        default=os.path.join("/path/to/kitti/dataset"))
+                        help='dataset path')
 
     parser.add_argument('--sample_rate', type=float,
                         help='how many best point pairs to sample for final error',
