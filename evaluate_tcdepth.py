@@ -12,7 +12,6 @@ from layers import disp_to_depth, BackprojectDepth
 from utils import readlines
 from options import MonodepthOptions
 import datasets
-# import networks
 import networks
 
 cv2.setNumThreads(0)  # This speeds up evaluation 5x on our unix systems (OpenCV 3.3.1)
@@ -128,9 +127,9 @@ def evaluate(opt):
 
     dataset = datasets.KITTIRAWDataset(opt.data_path_test, filenames,
                                        encoder_dict['height'], encoder_dict['width'],
-                                       [0], 4, is_train=False)
+                                       opt.frame_ids, 4, is_train=False)
     dataloader = DataLoader(dataset, 1, shuffle=False, num_workers=opt.num_workers,
-                            pin_memory=False, drop_last=False)
+                            pin_memory=True, drop_last=False)
 
     encoder = networks.DRNEncoder(pretrained=False)
     depth_decoder = networks.DepthDecoder()

@@ -155,7 +155,12 @@ class MonoDataset(data.Dataset):
                 other_side = {"r": "l", "l": "r"}[side]
                 inputs[("color", i, -1)] = self.get_color(folder, frame_index, other_side, do_flip)
             else:
-                inputs[("color", i, -1)] = self.get_color(folder, frame_index + i, side, do_flip)
+                # during evaluation, eigen test split contains some starting/ending frames of sequences,
+                # which we need to use the 'middle' frame to serve as 'previous/next' frame for the network
+                try:
+                    inputs[("color", i, -1)] = self.get_color(folder, frame_index + i, side, do_flip)
+                except:
+                    inputs[("color", i, -1)] = self.get_color(folder, frame_index, side, do_flip)
 
         # adjusting intrinsics to match each scale in the pyramid
         for scale in range(self.num_scales):

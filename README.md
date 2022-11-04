@@ -21,6 +21,7 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 ## 🎇 News
 - [x] Release training code (02.10.2022)
 - [x] Evaluation code for TCM available (02.12.2021)
+- [x] Pretrained weight available (04.11.2022)
 
 ## 🖊 Results
 ### Qualitative Results
@@ -57,9 +58,9 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 
 [//]: # (```)
 
-[//]: # (### Pretrained Weights)
+### Pretrained Weights
 
-[//]: # ([KITTI DRNC-26]&#40;https://drive.google.com/file/d/189C9xUhwwwVgPT7qU_v5hPSw9FzivYhF/view?usp=sharing&#41;)
+[KITTI DRNC-26](https://syncandshare.lrz.de/getlink/fiV2speTBhbN3oTcUh16TG/FullModelDRN26.zip)
 
 [//]: # ([KITTI DRND-54]&#40;https://drive.google.com/file/d/1dcCtYgoPQncjb6E5JkRwYp_PGOImDwS_/view?usp=sharing&#41;)
 
