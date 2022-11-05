@@ -19,9 +19,9 @@ Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV 
 
 
 ## 🎇 News
+- [x] Pretrained weight available (04.11.2022)
 - [x] Release training code (02.10.2022)
 - [x] Evaluation code for TCM available (02.12.2021)
-- [x] Pretrained weight available (04.11.2022)
 
 ## 🖊 Results
 ### Qualitative Results
