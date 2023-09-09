@@ -4,11 +4,11 @@
 
 Official Repository for 
 #### Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation 
-Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - 3DV, 2021.   
+**Daoyi Gao**, **Hanzhi Chen**, Patrick Ruhkamp, Nassir Navab, Benjamin Busam - 3DV, 2021.   
 #### Spatial-Temporal Attention through Self-Supervised Geometric Guidance  
-Patrick Ruhkamp*, Daoyi Gao*, Hanzhi Chen*, Nassir Navab, Benjamin Busam - ICCV Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving, 2021. 
+**Daoyi Gao**, **Hanzhi Chen**, Patrick Ruhkamp, Nassir Navab, Benjamin Busam - ICCV Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving, 2021. 
 
- \* equal contribution
+ **Bold**: equal contribution
 
 <div align=center><img src="resources/09260052_new.gif"/></div>  
 
